@@ -84,7 +84,9 @@ const App = () => {
     <div className="container">
       {/* <Header title='tt'/> */}
       {/* <Header title={1}/> */}
-      <Header title='Task Tracker'
+      <Header 
+      // title='Task Tracker'
+      title='Comment Box'
       onAdd2={() => setShowAddTask
       (!showAddTask) }
       showAdd={showAddTask}
