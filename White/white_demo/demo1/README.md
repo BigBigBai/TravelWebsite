@@ -1,1 +1,1 @@
-# Insert text and gif demo
+# Display text and gif on HTML page
