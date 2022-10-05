@@ -1,1 +1,2 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Step 1: cd reactweb
+Step 2: npm start
