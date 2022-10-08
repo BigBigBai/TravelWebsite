@@ -1,0 +1,1 @@
+# Glowing Text Animation Effects 2
