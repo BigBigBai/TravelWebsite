@@ -1,3 +1,4 @@
+/*
 video {
   object-fit: cover;
   width: 100%;
@@ -69,4 +70,9 @@ video {
   .btn {
     width: 100%;
   }
+}
+*/
+
+.img {
+  width: 100%;
 }
