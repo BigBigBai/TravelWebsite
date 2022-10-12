@@ -1,4 +1,5 @@
 import './App.css';
+import Chat from './Chat';
 import io from "socket.io-client";
 import { useState } from 'react';
 
@@ -32,6 +33,8 @@ function App() {
         }} 
       />
       <button onClick={joinRoom}>Join A Room</button>
+
+      <Chat socket={socket} username={username} room={room} />
     </div>
   );
 }
