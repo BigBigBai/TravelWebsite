@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import ScrollToBottom from 'react-scroll-to-bottom';
 
 function Chat({ socket, username, room }) {
     const [currentMessage, setCurrentMessage] = useState("");
@@ -34,21 +35,23 @@ function Chat({ socket, username, room }) {
                 <p>Live Chat</p>
             </div>
             <div className='chat-body'>
-                {messageList.map((messageContnet) => {
-                    return (
-                        <div className='message' id={username === messageContnet.author ? "you" : "other"}>
-                            <div>
-                                <div className='message-content'>
-                                    <p>{messageContnet.message}</p>
-                                </div>
-                                <div className='message-meta'>
-                                    <p id="time">{messageContnet.time}</p>
-                                    <p id="author">{messageContnet.author}</p>
+                <ScrollToBottom className='message-container'>
+                    {messageList.map((messageContnet) => {
+                        return (
+                            <div className='message' id={username === messageContnet.author ? "you" : "other"}>
+                                <div>
+                                    <div className='message-content'>
+                                        <p>{messageContnet.message}</p>
+                                    </div>
+                                    <div className='message-meta'>
+                                        <p id="time">{messageContnet.time}</p>
+                                        <p id="author">{messageContnet.author}</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    );
-                })}
+                        );
+                    })}
+                </ScrollToBottom>               
             </div>                
             <div className='chat-footer'>
                 <input 
