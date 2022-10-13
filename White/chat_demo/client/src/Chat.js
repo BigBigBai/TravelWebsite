@@ -21,7 +21,7 @@ function Chat({ socket, username, room }) {
 
     useEffect(() => {
         socket.on("receive_message", (data) => {
-            console.log();
+            console.log(data);
         })
     }, [socket]);    
 
