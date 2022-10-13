@@ -11,36 +11,32 @@ import 'swiper/modules/scrollbar/scrollbar.min.css';
 import 'swiper/modules/autoplay/autoplay.min.css';
 
 
-function rand(min, max) {
-  return Math.floor(Math.random() * (max - min + 1) + min);
-}
-
-function imgUrl() {
-  const id = rand(1, 200);
-  return `https://picsum.photos/id/${id}/1920/1080`;
-}
-
-function createSlide() {
-  return (
-    <SwiperSlide>
-      <img className="img" src={imgUrl()} alt="" />
-    </SwiperSlide>
-  );
-}
-
 export default () => {
   return (
-    <Swiper
-      modules={[Navigation, Pagination, Autoplay]}
-      slidesPerView={1}
-      navigation
-      autoplay={true}
-      pagination={{ clickable: true }}
+    <Swiper style={{
+      "--swiper-pagination-color": "#FFBA08",
+      "--swiper-pagination-bullet-inactive-color": "#999999",
+      "--swiper-pagination-bullet-inactive-opacity": "1",
+      "--swiper-pagination-bullet-size": "8px",
+      "--swiper-pagination-bullet-horizontal-gap": "3px"
+    }}
+    modules={[Navigation, Pagination, Autoplay]}
+    slidesPerView={1}
+    autoplay={true}
+    pagination={{ clickable: true }}
     >
-      {createSlide()}
-      {createSlide()}
-      {createSlide()}
-      {createSlide()}
+      {<SwiperSlide>
+        <img className="img" src='/images/img-1.jpg' alt="" />
+      </SwiperSlide>}
+      {<SwiperSlide>
+        <img className="img" src='/images/img-2.jpg' alt="" />
+      </SwiperSlide>}
+      {<SwiperSlide>
+        <img className="img" src='/images/img-3.jpg' alt="" />
+      </SwiperSlide>}
+      {<SwiperSlide>
+        <img className="img" src='/images/img-4.jpg' alt="" />
+      </SwiperSlide>}
     </Swiper>
   );
 };
