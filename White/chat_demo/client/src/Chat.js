@@ -20,6 +20,7 @@ function Chat({ socket, username, room }) {
             await socket.emit("send_message", messageData);
             //be able to see what we send
             setMessageList((list) => [...list, messageData]);
+            setCurrentMessage("");
         }
     };
 
@@ -55,7 +56,8 @@ function Chat({ socket, username, room }) {
             </div>                
             <div className='chat-footer'>
                 <input 
-                    type="text" 
+                    type="text"
+                    value={currentMessage} 
                     placeholder="Hey..."
                     onChange={(event) => { 
                         setCurrentMessage(event.target.value); 
