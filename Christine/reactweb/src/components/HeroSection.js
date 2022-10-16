@@ -14,14 +14,16 @@ import 'swiper/modules/autoplay/autoplay.min.css';
 export default () => {
   return (
     <Swiper style={{
-      "--swiper-pagination-color": "#FFBA08",
-      "--swiper-pagination-bullet-inactive-color": "#999999",
+      "--swiper-theme-color": "#123a6f",
+      "--swiper-pagination-color": "#FFFFFF",
+      "--swiper-pagination-bullet-inactive-color": "#123a6f",
       "--swiper-pagination-bullet-inactive-opacity": "1",
       "--swiper-pagination-bullet-size": "8px",
       "--swiper-pagination-bullet-horizontal-gap": "3px"
     }}
     modules={[Navigation, Pagination, Autoplay]}
     slidesPerView={1}
+    navigation
     autoplay={true}
     pagination={{ clickable: true }}
     >
