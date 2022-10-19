@@ -14,7 +14,7 @@ import 'swiper/modules/autoplay/autoplay.min.css';
 export default () => {
   return (
     <Swiper style={{
-      "--swiper-theme-color": "#123a6f",
+      "--swiper-theme-color": "#21aaef",
       "--swiper-pagination-color": "#FFFFFF",
       "--swiper-pagination-bullet-inactive-color": "#123a6f",
       "--swiper-pagination-bullet-inactive-opacity": "1",
@@ -31,13 +31,13 @@ export default () => {
         <img className="img" src='/images/img-1.jpg' alt="" />
       </SwiperSlide>}
       {<SwiperSlide>
-        <img className="img" src='/images/img-2.jpg' alt="" />
+        <img className="img" src='/images/img-4.jpg' alt="" />
       </SwiperSlide>}
       {<SwiperSlide>
         <img className="img" src='/images/img-3.jpg' alt="" />
       </SwiperSlide>}
       {<SwiperSlide>
-        <img className="img" src='/images/img-4.jpg' alt="" />
+        <img className="img" src='/images/img-2.jpg' alt="" />
       </SwiperSlide>}
     </Swiper>
   );
