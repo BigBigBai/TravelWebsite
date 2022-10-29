@@ -1,7 +1,7 @@
 import React from 'react'
 // import ReactDOM from 'react-dom'
 import CommentForm from "./CommentForm";
-import '../Comment.css';
+// import '../Comment.css';
 
 const Comment = ({
   comment,
@@ -33,12 +33,12 @@ const Comment = ({
   return (
     <div key={comment.id} className="comment">
       <div className="comment-image-container">
-        <img src="/user-icon.png" />
+        <img src="/images/user-icon.png" />
       </div>
       <div className="comment-right-part">
         <div className="comment-content">
           <div className="comment-author">{comment.username}</div>
-          <div>{createdAt}</div>
+          <div className="comment-createdAt">{createdAt}</div>
         </div>
         {!isEditing && <div className="comment-text">{comment.body}</div>}
         {isEditing && (
