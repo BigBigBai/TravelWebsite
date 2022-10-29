@@ -18,7 +18,7 @@ function App() {
           <Route path='/about' component={About} />
           <Route path='/sign-in' component={SignIn} />
           <Route path='/chat-room' component={Chatroom} />
-          <Route path='/comment' component={Comment} />
+          <Route path='/comment' style='./components/pages/Comment.css' component={Comment} />
         </Switch>
       </Router>
     </>
