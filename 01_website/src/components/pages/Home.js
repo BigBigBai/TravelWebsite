@@ -12,7 +12,7 @@ const Home = () => {
       scrollingSpeed={1000}
       scrollHorizontally={true}
       navigation={true}
-      sectionsColor={["orange", "purple", "green"]}
+      sectionsColor={["white", "#bbdefc", "#7daafe",'#537bfd']}
       render={() => {
         return (
           <>
@@ -23,12 +23,15 @@ const Home = () => {
               </div>
 
               <div className="section section1">
-                <h3>Section 2</h3>
+                <h3>Function 1</h3>
               </div>
 
               <div className="section section2">
-                <h3>Section 3</h3>
+                <h3>Function 2</h3>
 
+              </div>
+              <div className="section section3">
+                <h3>Function 3</h3>
               </div>
             </div>
           </>
