@@ -24,6 +24,7 @@ export default () => {
     modules={[Navigation, Pagination, Autoplay]}
     slidesPerView={1}
     navigation
+    autoHeight={true}
     autoplay={true}
     pagination={{ clickable: true }}
     >

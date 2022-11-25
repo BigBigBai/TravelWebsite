@@ -7,10 +7,11 @@ import About from './components/pages/About';
 import SignIn from './components/pages/SignIn';
 import Chatroom from './components/pages/Chatroom';
 import Comment from './components/pages/Comment';
+import ReactFullpage from "@fullpage/react-fullpage";
 
 function App() {
   return (
-    <>
+    <ReactFullpage.Wrapper>
       <Router>
         <Navbar />
         <Switch>
@@ -21,7 +22,7 @@ function App() {
           <Route path='/comment' component={Comment} />
         </Switch>
       </Router>
-    </>
+    </ReactFullpage.Wrapper>
   );
 }
 
